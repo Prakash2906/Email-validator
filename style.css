@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #00f0ff;
+    width: 350px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #00f0ff;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input.valid {
+    border-color: #00ff8c;
+    box-shadow: 0 0 5px #00ff8c;
+  }
+  
+  input.invalid {
+    border-color: #ff4b5c;
+    box-shadow: 0 0 5px #ff4b5c;
+  }
+  
+  #message {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #00f0ff;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #00d4e3;
+  }
+  
+  /* Success animation */
+  .success {
+    animation: pop 0.5s ease forwards;
+  }
+  
+  @keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
